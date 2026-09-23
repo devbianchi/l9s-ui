@@ -22,10 +22,15 @@ export default function App() {
             <ThemeToggle />
           </header>
           <div>
-            <p>Conteúdo do painel aqui.</p>
+            {/* Rotas do aplicativo */}
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/clients" element={<Clients />} />
+            </Routes>
           </div>
         </main>
       </SidebarProvider>
     </ThemeProvider>
   )
 }
+
